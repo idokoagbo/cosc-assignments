@@ -1,0 +1,27 @@
+#include <iostream>
+
+// pointers class lab 
+
+using namespace std;
+
+
+int add(int* &a, int *b){
+
+    int *q = a;
+
+    return (*q + *b);
+
+}
+
+int main(){
+
+
+    int x = 5;
+    int y = 7;
+
+    int *m = &x;
+
+    cout<<add(m, &y)<<endl;
+
+    return 0;
+}
